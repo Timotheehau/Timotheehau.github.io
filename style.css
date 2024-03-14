@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    background-color: white;
+    color: orangered;
+}
+header {
+    width: 100vw;
+    background-color: lightgrey;
+    position: fixed;
+    margin-bottom: 1rem;
+}
+.menu-burger {
+    height:100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background-color: orangered;
+    padding-top: 1rem;
+    text-decoration: none;
+    transition: right 0.5s ease;
+
+}
+.menu-burger a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu-burger a:hover {
+    color: black;
+}
+
+.menu-burger ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu-burger.active {
+    right: 0;
+}
+.menu-burger .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+.burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: white ;
+    margin: 6px 0;
+}
+#openBtn {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
+.email {
+    display: flex;
+    justify-content: left;
+    margin-top: 4rem;
+}
