@@ -22,3 +22,5 @@ openBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
     openBtn.style.display = 'block'
 })
+
+
