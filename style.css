@@ -70,34 +70,36 @@ header {
 }
 
 #page1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     width: 60vw;
     height: 80vh;
     padding: 2rem;
-    .page1 {
-        display: block;
-        justify-content: end;
-        align-items: center;
-        margin-left: 2vw;
-        border: 1px white solid ;
-        width: 40vw;
-        h1{
-            display: flex;
-            justify-content: center;
-        
-        }
     }
+    .page1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100vw;
+        margin-left: 2vw;
+        position: relative;        
+    }
+
+.experiences {
+
+    position: absolute;
+    top: 0;
+    right: 20rem;
+
+    }
+.Animateur {
+    margin-top: 8rem;
 }
-.img1 {
-    position:static;
-    float: right;
-    right: 0;
-    z-index: 0;
-    top: 50px;
-    width: 20%;
-    height: 30vh;
+.Equipier {
+    margin-top: 8rem;
+
 }
+.Stagiaire {
+    margin-top: 8rem;
+}
+
 
 p {
 
@@ -126,7 +128,7 @@ p {
     padding: 2vw;
 }
 #page2 {
-    width: 60vw;
+    width: 100vw;
     height: 80vh;
     box-sizing: border-box;
     .page2 {
@@ -332,7 +334,7 @@ p {
 
 
 }
-@media screen and (min-width : 768px) {
+/* @media screen and (min-width : 768px) {
     #page1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -352,11 +354,9 @@ p {
             }
         }   
 
-    }
-    #page2 {
-        width: 100vw;
-        height: 100vh;
-    }
+    } */
+
+    /*
     #page3 {
         width: 100vw;
         height: 100vh;
@@ -375,7 +375,7 @@ p {
         height: 100vh;
         margin-bottom: 2rem;
     }
-}
+} */
 
 .AP3 {
     display: block;
