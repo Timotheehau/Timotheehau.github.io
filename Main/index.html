@@ -15,9 +15,10 @@
         <div id="mySidenav" class="menu-burger">
             <a href="#" id="closeBtn" class="close">x</a>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">A propos</a></li>
-                <li><a href="veilles">Veilles</a></li>
+                <li><a href="/contact-form/public/index.html">Home</a></li>
+                <li><a href="/contact-form/public/index.html">A propos</a></li>
+                <li><a href="https://ecole-ipssi.com/?a_campaign=14726163359&a_content=130015451720&a_ad=586301903704&a_kw=ipssi&gad_source=1&gclid=CjwKCAjwl4yyBhAgEiwADSEjeEHNd4zw1_YSXFtLnhz6fG0E0Xx4HGiSDyt2GURa302yLp-Myup18BoChL8QAvD_BwE">IPSSI</a></li>
+                <li><a href="../veilles">Veilles</a></li>
                 <li><a href="#page3">Projets</a></li>
                 <li><nav><a href="#footer">Contact</a></nav></li>
             </ul>
@@ -37,8 +38,8 @@
     <div id="page1" class="pages">
         
 
-        <div class="page1">
-            <div class="à-propos">
+        <div class="page1" style="display: flex; justify-content: center;">
+            <div class="à-propos" style="width: 40vw; margin-right: 2vw;">
                 <h1 class=>Informations</h1>
 
                 <p>
@@ -48,7 +49,7 @@
                     animateur pendant 3 années consécutives en
                     CDD.
                     J'évolue dans le monde du développement 
-                    informatique depuis 1 ans et pour encore 4 ans
+                    informatique depuis 1 an et pour encore 4 ans
                     , j'espère. Je crée des sites internet sur mon
                     temps libre, je me forme à la cybersécurité
                     en autodidacte et je souhaite aller dans le 
@@ -73,7 +74,7 @@
         </div>    
     </div>
     <div id="page2" class="pages">
-        <img src="./photo_orange.jpg" alt="" class="img2">
+        <img src="../assets/photo_orange.jpg" alt="" class="img2">
         <div class="page2">
         <p>
             « Ceux qui nous ont donné la vie vont la 
@@ -100,7 +101,7 @@
                 <h2>23/01/2024</h2>
                 <p>Tout commence par une idée. Il faudra réaliser la création d'une entreprise <b>fictive</b>. En respectant une procédure donnée par l'IPSSI.</p>
                 <button>
-                    <a href="./GoalTeach/accueil.html">
+                    <a href="../../GoalTeach/accueil.html">
                         Visualiser le projet
                     </a>
                 </button>
@@ -110,7 +111,7 @@
                 <h2>23/01/2024</h2>
                 <p>Il faudra réaliser un site internet pour une entreprise <b>fictive</b>. En respectant une procédure donnée par l'IPSSI.</p>
                 <button>
-                    <a href="./AP2/">
+                    <a href="../../AP2/">
                         Visualiser la fiche
                     </a>
                 </button>
@@ -118,16 +119,16 @@
             <div class="stage">
                 <h1>Période de stage</h1>
                 <h2>06/05/2024</h2>
-                <p>Pour visualiser les missions à réaliser lors de mon stage cliquez ici</p>
+                <p>Pour visualiser les missions à réalisées lors de mon stage</p>
                 <button>
-                    <a href="missions_slam/missions_slam.webp">
+                    <a href="../../missions_slam/Missions.webp">
                         Visualiser les missions
                     </a>
             </div>
         </div>
     </div>
     <div id="page4">
-        <h1>
+        <h1 style="margin-top: 10vh;">
             Evenements à venir
         </h1>
         <div class="events">    
@@ -173,46 +174,57 @@
     <div id="page5">
         <h1>CV et lettre de motivations</h1>
         <div class="page5">
-        <img src="lm-Timothée-Hauser-–-V2.webp" alt="Document impossible à charger">
-        <img src="Alternance-Développeur-Web.webp" alt="Documents impossible à charger">
+            <img id="CV-Timo" alt="CV Image" src="../assets/CV-Alternance-V3.webp">          
+            <img id="lm-Timo" alt="LM Image" src="../assets/lm-Timothée-Hauser-–-V2.webp">
+            <button id="downloadCV">Télécharger CV</button>
+            <button id="downloadLM">Télécharger LM</button>
         </div>
+        <footer id="footer">
+            <div class="infos">
+                <li style="margin-bottom: 8vh;">Timothée Hauser</li>
+                <li style="margin-bottom: 8vh;">16.hauser@gmail.com</li>
+                <li>06 67 63 66 07</li>
+                </div>
+                <div class="réseaux">
+                    <img src="../assets/instagramicon.webp" alt="Failed to load icon">
+                    <a href="https://www.instagram.com/timothee_hauser/">Instagram</a>
+                    <img src="../assets/linkedinicon.webp" alt="Failed to load icon">
+                    <a href="www.linkedin.com/in/timothée-hauser-40b9b421b">Linkedin</a>
+                    <img src="../assets/githubicon.webp" alt="Failed to load icon">
+                    <a href="https://github.com/Timotheehau">Github</a> 
+                    </div>
+                    </footer>
+                <div>
+            </div>
     </div>
-    <div id="page6">
+    <button id="buttonGoUp">↑</button>
+    <!-- <div id="page6">
         <h1>
             Formulaire de contact (fonctionnalité à venir)
         </h1>
         <div class="page6">
-            <form action="contact.php" method="post">
-                <label for="nom">Nom</label>
-                <input type="text" name="nom" id="nom" required>
-                <label for="prenom">Prénom</label>
-                <input type="text" name="prenom" id="prenom" required>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
-                <label for="message">Message</label>
-                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
-                <button type="submit">Envoyer</button>
-            </form>
+            <div class="container">
+                <h2>Contactez-moi</h2>
+                <form id="contactForm" action="/send" method="POST">
+                  <label for="name">Nom:</label>
+                  <input type="text" id="name" name="name" required>
+                  
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                  
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" required></textarea>
+                  
+                  <button type="submit">Envoyer</button>
+                </form>
+                <p id="successMessage" style="display:none;">Votre message a été envoyé avec succès!</p>
+              </div>
+              <script src="app.js"></script>
         </div>
 
         <h1>Je vous recontacterai surement sous 24H ! :)</h1>
         <h1 class="Thanks">Thanks a lot !</h1>
-    </div>
-    <footer id="footer">
-        <div class="infos">
-            <h1>Timothée Hauser</h1>
-            <h1>16.hauser@gmail.com</h1>
-            <h1>06 67 63 66 07</h1>
-        </div>
-        <div class="réseaux">
-        <img src="instagramicon.webp" alt="Failed to load icon">
-        <a href="https://www.instagram.com/timothee_hauser/">https://www.instagram.com/timothee_hauser/</a>
-        <img src="linkedinicon.webp" alt="Failed to load icon">
-        <a href="www.linkedin.com/in/timothée-hauser-40b9b421b">www.linkedin.com/in/timothée-hauser-40b9b421b</a>
-        <img src="githubicon.webp" alt="Failed to load icon">
-        <a href="https://github.com/Timotheehau">https://github.com/Timotheehau</a> 
-    </div>
-    </footer>
+    </div> -->
 
     
 
