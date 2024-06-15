@@ -1,19 +1,14 @@
-<<<<<<< HEAD:Main/style.css
 button {
     cursor: pointer;
     background-color: black;
     color: white;
     font-size: large;
 }
-=======
-
->>>>>>> 3163dcc360f41926bd3d61e9d048c60e81b5b74c:style.css
 
 body {
     width: 100vw;
     display: grid;
     background-color: white;
-<<<<<<< HEAD:Main/style.css
     color: black;
     overflow-x: hidden;
     max-width: 100%;
@@ -24,19 +19,6 @@ header {
     background-color: transparent;
     position: fixed;
     margin-bottom: 1rem;
-=======
-    color: orangered;
-    margin:0;
-
-}
-header {
-    width: 80vw;
-    background-color: lightgrey;
-    margin-left: 10vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
->>>>>>> 3163dcc360f41926bd3d61e9d048c60e81b5b74c:style.css
 }
 #buttonGoUp {
     position: fixed;
@@ -110,27 +92,14 @@ header {
 }
 
 #page1 {
-<<<<<<< HEAD:Main/style.css
     width: 80vw;
     height: 100vh;
     margin-left: 10vw;
-=======
-    width: 60vw;
-    height: 80vh;
-    padding: 2rem;
-    margin-left: 10vw;
-    margin-bottom: 7vh;
->>>>>>> 3163dcc360f41926bd3d61e9d048c60e81b5b74c:style.css
     }
     .page1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
-<<<<<<< HEAD:Main/style.css
         width: 80vw;
-=======
-        width: 60vw;
-        margin-left: 2vw;
->>>>>>> 3163dcc360f41926bd3d61e9d048c60e81b5b74c:style.css
     }
 
 .experiences {
@@ -158,13 +127,9 @@ p {
     left: 10vw;
 }
 .img2 {
-<<<<<<< HEAD:Main/style.css
     top: 50px;
     width: 40%;
     height: auto;
-=======
-    width: 80%;
->>>>>>> 3163dcc360f41926bd3d61e9d048c60e81b5b74c:style.css
 }
 .MCD {
     display: block;
@@ -179,7 +144,6 @@ p {
     padding: 2vw;
 }
 #page2 {
-<<<<<<< HEAD:Main/style.css
     width: 80vw;
     height: 80vh;
     box-sizing: border-box;
@@ -187,37 +151,15 @@ p {
     grid-template-columns: 1fr 1fr;
     margin-left: 10vw;
     .page2 {
-=======
-    width: 60vw;
-    height: 80vh;
-    margin-left: 10vw;
-    margin-top:10vh;
-    .page2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        width: 60vw;
->>>>>>> 3163dcc360f41926bd3d61e9d048c60e81b5b74c:style.css
         margin-left: 2vw;
 }
-<<<<<<< HEAD:Main/style.css
-=======
-
->>>>>>> 3163dcc360f41926bd3d61e9d048c60e81b5b74c:style.css
 }
 .p_page2 {
 
     font-size: 3rem;
 }
 .page2 {
-<<<<<<< HEAD:Main/style.css
     margin-right: 2vw;
-=======
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 90vw;
-    margin-left: 2vw;
-    position: relative; 
->>>>>>> 3163dcc360f41926bd3d61e9d048c60e81b5b74c:style.css
     
 }
 
@@ -512,19 +454,10 @@ p {
     display: grid;
 
     width: 80vw;
-<<<<<<< HEAD:Main/style.css
     height: 120vh;
     box-sizing: border-box;
     margin-left: 10vw;
     margin-bottom: 0;
-=======
-    height: 100vh;
-    box-sizing: border-box;
-    margin-left: 10vw;
-    margin-bottom: 10vh;
-    border: 1px solid black;
-    
->>>>>>> 3163dcc360f41926bd3d61e9d048c60e81b5b74c:style.css
     h1{
         display: flex;
         justify-content: center;
@@ -533,14 +466,8 @@ p {
     }
 
     img{
-<<<<<<< HEAD:Main/style.css
         width: 100%;
         height: 100%;
-=======
-        width: auto;
-        height: 80vh;
-
->>>>>>> 3163dcc360f41926bd3d61e9d048c60e81b5b74c:style.css
     }
 }
 .page5 {
@@ -549,7 +476,6 @@ p {
     border: 1px solid black;
 }
 
-<<<<<<< HEAD:Main/style.css
 #downloadCV {
     padding: 1rem;
 }
@@ -678,160 +604,3 @@ p {
     }
     
 }
-=======
-#footer {
-    bottom: 0;
-    width: 80vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: orange;
-    color: white;
-    padding: 0; /* Ajuster le padding selon vos besoins */
-    box-sizing: border-box;
-    border: 1px solid black;
-    margin-left: 5vw;
-}
-
-#footer .infos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#footer .réseaux {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#footer .réseaux img {
-    width: 50px;
-    height: 50px;
-}
-
-#footer .réseaux a {
-    text-decoration: none;
-    color: white;
-}
-
-
-@media screen and (max-width: 768px) {
-    body {
-        width: 90vw;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    #footer {
-        grid-template-columns: 1fr;
-    }
-    #footer .infos {
-        margin-bottom: 2rem;
-    }
-    #footer .réseaux {
-        margin-top: 2rem;
-    }
-
-    #page1 {
-        width: 90vw;
-        height: 100vh;
-        .page1 {
-            display: flex;
-            justify-content:center;
-            flex-direction: column;
-            align-items: center;
-            margin-left: 2vw;
-            border: 1px white solid ;
-            width: 40vw;
-            h1{
-                display: flex;
-                justify-content: center;
-            
-            }
-        }   
-
-    }
-
-    #page2 {
-        width: 90vw;
-        height: 100vh;
-        .page2 {
-            display: block;
-            justify-content: end;
-            align-items: center;
-            margin-left: 2vw;
-            border: 1px white solid ;
-            width: 40vw;
-            h1{
-                display: flex;
-                justify-content: center;
-            
-            }
-        }   
-
-    }
-
-    #page3 {
-        width: 90vw;
-        height: 100vh;
-        .page3 {
-            display: block;
-            justify-content: end;
-            align-items: center;
-            margin-left: 2vw;
-            border: 1px white solid ;
-            width: 40vw;
-            h1{
-                display: flex;
-                justify-content: center;
-            
-            }
-        }   
-
-    }
-
-    #page4 {
-        width: 90vw;
-        height: 100vh;
-        .page4 {
-            display: block;
-            justify-content: end;
-            align-items: center;
-            margin-left: 2vw;
-            border: 1px white solid ;
-            width: 40vw;
-            h1{
-                display: flex;
-                justify-content: center;
-            
-            }
-        }   
-
-    }
-
-    #page5 {
-        width: 90vw;
-        height: 100vh;
-        .page5 {
-            display: block;
-            justify-content: end;
-            align-items: center;
-            margin-left: 2vw;
-            border: 1px white solid ;
-            width: 40vw;
-            h1{
-                display: flex;
-                justify-content: center;
-            
-            }
-        }   
-
-    }
-
-
-    
-}
->>>>>>> 3163dcc360f41926bd3d61e9d048c60e81b5b74c:style.css
