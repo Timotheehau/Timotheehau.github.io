@@ -1,0 +1,207 @@
+body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    li{
+        list-style-type: none;
+
+    }
+}
+
+
+
+.Bienvenue {
+    font-size: 700%;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid orange; /* Effet de curseur */
+    animation: typing 2s steps(10, end), blink-caret 0.75s step-end infinite;
+}
+
+.left {
+    top: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    position: relative;
+    p {
+        font-size: 200%;
+        width: 50%;
+    }
+}
+
+.right {
+    top: 20%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    h2 {
+        font-size: 300%;
+    }
+    .links {
+        text-decoration: dashed;
+        font-size: 300%;
+        color: white;
+    }
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 50%; } /* Ajustez cette valeur pour correspondre à la longueur du texte */
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
+.réseaux {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: white;
+    img{
+        width: 50px;
+        height: 50px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;        
+        max-width: 100%;
+        height: fit-content;
+        width: auto;
+        left:0;
+        background-color: black;
+        overflow: visible;
+    }
+    .Bienvenue {
+        font-size: 700%;
+        font-family: 'Courier New', Courier, monospace;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 0.15em solid orange; /* Effet de curseur */
+        animation: typing 2s steps(10, end), blink-caret 0.75s step-end infinite;
+    }
+    .réseaux {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        font-size: xx-large;
+        img{
+            width: 50px;
+            height: 50px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+    .wave-top, .wave-bottom {
+        display: none;
+        z-index: -1;
+        position: absolute;
+        width: 15%;
+        height: 100%;
+        background: url('../assets/vagues.jpg'); /* Remplacez par le chemin de votre image SVG de vagues */
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: wave-animation 10s linear infinite;
+
+    }
+    .wave-left, .wave-right {
+        z-index: -1;
+        position: absolute;
+        width: 15%;
+        height: 100%;
+        background: url('../assets/vagues.jpg'); /* Remplacez par le chemin de votre image SVG de vagues */
+        background-size: cover;
+        background-repeat: repeat;
+        animation: wave-animation 10s linear infinite;
+    }
+    
+    .wave-left {
+        left: 0;
+        background-position: center left;
+        animation: wave-animation-left 10s linear infinite;
+    }
+    
+    .wave-right {
+        right: 0;
+        background-position: center right;
+        transform: scaleX(-1);
+        animation: wave-animation-right 10s linear infinite;
+    }
+    
+    @keyframes wave-animation-left {
+        from { background-position-y: 0; }
+        to { background-position-y: 1000px; } /* Ajustez selon la hauteur de votre image */
+    }
+    
+    @keyframes wave-animation-right {
+        from { background-position-y: 0; }
+        to { background-position-y: -1000px; } /* Ajustez selon la hauteur de votre image */
+    }
+    
+    .wave-top {
+        left: 0;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+    
+    .wave-bottom {
+        right: 0;
+        transform: rotate(180deg);
+    }
+    @keyframes wave-animation {
+        from { background-position-x: 0; }
+        to { background-position-x: 1000px; } /* Ajustez selon la hauteur de votre image */
+    }
+}
+
+.wave-top, .wave-bottom {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    background: url('../assets/vagues.jpg'); /* Remplacez par le chemin de votre image SVG de vagues */
+    background-size: cover;
+    background-repeat: repeat;
+    animation: wave-animation 15s linear infinite;
+
+}
+
+.wave-top {
+    top: 0;
+    background-position: center bottom;
+}
+
+.wave-bottom {
+    bottom: 0;
+    background-position: center bottom;
+}
+
+@keyframes wave-animation {
+    from { background-position-x: 0; }
+    to { background-position-x: 1000px; } /* Ajustez selon la largeur de votre image */
+}

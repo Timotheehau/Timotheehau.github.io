@@ -1,0 +1,104 @@
+.réseaux {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: white;
+    img{
+        width: 50px;
+        height: 50px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    position: relative;
+    height: fit-content;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+*{
+    margin: 1vh;
+    padding: 0;
+    box-sizing: border-box;
+}
+.checked {
+    color: orange;
+  }
+.Experiences .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Langages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wave-left, .wave-right {
+    z-index: -1;
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background: url('../assets/vagues.jpg'); /* Remplacez par le chemin de votre image de vagues */
+    background-size: cover;
+    background-repeat: repeat-y;
+    animation: wave-animation 10s linear infinite;
+}
+
+.wave-left {
+    left: 0;
+}
+
+.wave-right {
+    right: 0;
+    transform: scaleX(-1);
+}
+
+@keyframes wave-animation {
+    from { background-position-y: 0; }
+    to { background-position-y: 1000px; } /* Ajustez selon la hauteur de votre image */
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 100%;
+        width: auto;
+        background-color: black;
+        overflow: hidden;
+    }
+    .Bienvenue {
+        font-size: 500%;
+    }
+    .réseaux {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        font-size: xx-large;
+        img{
+            width: 50px;
+            height: 50px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}

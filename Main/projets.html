@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Projets</title>
+</head>
+<body>
+    
+    <div class="projets">
+        <div class="events" style="cursor: pointer;">
+            <div class="event">
+                <h1>AP-1</h1>
+                <h2>23/01/2024</h2>
+                <p>Tout commence par une idée. Il faudra réaliser la création d'une entreprise <b>fictive</b>. En respectant une procédure donnée par l'IPSSI.</p>
+                <button>
+                    <a href="../../GoalTeach/accueil.html">
+                        Visualiser le projet
+                    </a>
+                </button>
+            </div>
+            <div class="event">
+                <h1>AP-2</h1>
+                <h2>23/01/2024</h2>
+                <p>Il faudra réaliser un site internet pour une entreprise <b>fictive</b>. En respectant une procédure donnée par l'IPSSI.</p>
+                <button>
+                    <a href="../../AP2/">
+                        Visualiser la fiche
+                    </a>
+                </button>
+            </div>
+            <div class="event">
+                <h1>Période de stage</h1>
+                <h2>06/05/2024</h2>
+                <p>Visualisez les missions à réalisées lors de mon stage ainsi que mon rapport de stage</p>
+                <button>
+                    <a href="../../missions_slam/Missions.webp">
+                        Visualiser les missions
+                    </a>
+            </div>
+        </div>
+        <div style="display: grid; grid-template-rows: 1fr 1fr">
+
+            <div><h1 class="premierH1" style="margin-left: 1vw;">Evenements réalisés et à venir</h1></div>
+            <div id="goBackButton" style=" cursor: pointer; width: 20vw; display: flex; justify-content: center;">
+                <img src="../assets/gobackbutton.png" style=" height: 10vh; width:auto; display: flex; justify-content: center;" alt="Go Back">
+            
+                <script>
+
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const buttons = document.querySelectorAll('.event')
+                        buttons.forEach(button => {
+                            button.addEventListener('click', () => {
+                                const link = button.querySelector('a').getAttribute('href')
+                                window.location.href = link
+                            })
+                        })
+                    })
+                    document.addEventListener('DOMContentLoaded', (event) => {
+                        const goBackButton = document.getElementById('goBackButton')
+                        goBackButton.addEventListener('click', () => {
+                            window.location.href = 'Card.html'
+                        })
+                    })
+                    </script>
+                </div>
+                <div class="réseaux" style="position: fixed; bottom: 1vh; right: 1vw; background-color: white;">
+                    <img src="../assets/instagramicon.webp" alt="Failed to load icon">
+                    <a href="https://www.instagram.com/timothee_hauser/"></a>
+                    <img src="../assets/linkedinicon.webp" alt="Failed to load icon">
+                    <a href="www.linkedin.com/in/timothée-hauser-40b9b421b"></a>
+                    <img src="../assets/githubicon.webp" alt="Failed to load icon">
+                    <a href="https://github.com/Timotheehau"></a> 
+                </div>
+        </div>
+
+        <div class="events" style="cursor: pointer;">
+            <div class="event">
+                <h1>Alternance</h1>
+                <h2>Année 2024-2025</h2>
+                <p>Vous pouvez vous renseigner sur les missions que j'aurai effectué lors de mon alternance prochainement</p>
+                <button>
+                    <a href="./projets.html" >
+                        Se renseigner
+                    </a>
+                </button>
+            </div>
+            <div class="event">
+                <h1>AP-3</h1>
+                <h2>?/09/2024 - ?/12/2024</h2>
+                <p>Mise en place des solutions pour le client.
+                <span></span>
+                Outil : Trello ou autre outil pour effectuer un travail collaboratif
+                <span></span>
+                Objectifs pas encore publiés.</p>
+                <button>
+                    <a href="./projets.html">
+                        A venir
+                    </a>
+                </button>
+            </div>
+            <div class="event">
+                <h1>AP-4</h1>
+                <h2>?/01/2025 - ?/04/2025</h2>
+                <p>Tester et améliorer des solutions existantes.<span> </span>
+                        <span></span>
+                Trop peu de détails sur ce projet à ce jour.</p>
+                <button>
+                    <a href="./projets.html">
+                        A venir
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>

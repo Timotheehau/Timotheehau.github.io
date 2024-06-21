@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="../Main/app.js" defer></script>
+</head>
+<body>
+    <div class="wave-top"></div>
+
+<div class="wave-bottom"></div>
+
+<div class="left">
+    <img id="CV-Timo" alt="CV Image" src="../assets/CV-Alternance-V3.webp">          
+    <button id="downloadCV">Télécharger CV</button>
+</div>
+<div class="right">
+    <img style="background-color: white;" id="lm-Timo" alt="LM Image" src="../assets/lm-Timothée-Hauser-–-V2.webp">
+    <button id="downloadLM">Télécharger LM</button>
+</div>
+<div class="réseaux">
+    <a href="https://www.instagram.com/timothee_hauser/"><img src="../assets/instagramicon.webp" alt="Failed to load icon"></a>
+    <a href="www.linkedin.com/in/timothée-hauser-40b9b421b"><img src="../assets/linkedinicon.webp" alt="Failed to load icon"></a>
+    <a href="https://github.com/Timotheehau"><img src="../assets/githubicon.webp" alt="Failed to load icon"></a> 
+</div>
+
+    <img id="goBackbutton" style="position: fixed; cursor: pointer; top: 0; right: 0; width: 4vw; height: auto;" src="../assets/gobackbutton.png" alt="Go Back">
+
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const goBackButton = document.getElementById('goBackbutton')
+        goBackButton.addEventListener('click', () => {
+            window.location.href = '../Main/Card.html'
+        })
+    })
+</script>
+
+</body>
+</html>
