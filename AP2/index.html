@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../veilles/style.css">
     <title>AP2</title>
 </head>
 <body>
@@ -11,25 +11,43 @@
         <h1>Projet de Groupe : GSB Laboratoire</h1>
         <ul style="text-decoration: dotted; font-size: 300%;">
             <li>
-                <a style="color: black; text-decoration: none;" href="../Main/projets.html">Retour</a>
+                <a style="color: white; text-decoration: none;" href="../Main/projets.html">Retour</a>
             </li>
             <li>
-                <a style="color: black; text-decoration: none;" href="./assets/TO DO AP2 (1).pdf">Objectifs AP 2:</a>
+                <a style="color: white; text-decoration: none;" href="./assets/TO DO AP2 (1).pdf">Objectifs AP 2</a>
             </li>
-            <li><a style="color: black; text-decoration: none;" href="https://trello.com/b/JwVaUVYg/laboratoire-ap-2">Trello + liens</a></li>
+            <li><a style="color: white; text-decoration: none;" href="https://trello.com/b/JwVaUVYg/laboratoire-ap-2">Trello + liens</a></li>
             <li>
-                <a style="color: black; text-decoration: none;" href="https://www.figma.com/design/QasHQOHkzALfLXnEg7WZjZ/Laboratoire-C2S?node-id=0-1">Maquette</a>
-            </li>
-            <li>
-                <a style="color: black; text-decoration: none;" href="./assets/MCD.webp">MCD</a>
+                <a style="color: white; text-decoration: none;" href="https://www.figma.com/design/QasHQOHkzALfLXnEg7WZjZ/Laboratoire-C2S?node-id=0-1">Maquette</a>
             </li>
             <li>
-                <a style="color: black; text-decoration: none;" href="./assets/UML.webp">UML</a>
+                <a style="color: white; text-decoration: none;" href="./assets/MCD.webp">MCD</a>
+            </li>
+            <li>
+                <a style="color: white; text-decoration: none;" href="./assets/UML.webp">UML</a>
             </li>
         </ul>
     </header>
     <main>
         <h1 style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; font-size: 500%;">Vous êtes libre de voyager à travers le projet</h1>
     </main>
+    <div id="goBackButton" style=" cursor: pointer; position: fixed; right: 0; top:0;">
+        <img src="../assets/gobackbutton.png" style=" height: 10vh; width:auto; display: flex; justify-content: center;" alt="Go Back">
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                const goBackButton = document.getElementById('goBackButton')
+                goBackButton.addEventListener('click', () => {
+                    window.location.href = '../Main/Card.html'
+                })
+            })
+        </script>
+    </div>
+    <div class="réseaux" style="position: fixed; bottom: 0; right: 0;">
+        <a href="https://www.instagram.com/timothee_hauser/"><img src="../assets/instagramicon.webp" alt="Failed to load icon"></a>
+        <a href="https://www.linkedin.com/in/timothée-hauser-c-est-moi"><img src="../assets/linkedinicon.webp" alt="Failed to load icon"></a>
+        <a href="https://github.com/Timotheehau"><img src="../assets/githubicon.webp" alt="Failed to load icon"></a> 
+        <a href="mailto:16.hauser@gmail.com"><img src="../assets/email_icon.webp" alt="Failed to load icon"></a>
+    </div>
 </body>
 </html>

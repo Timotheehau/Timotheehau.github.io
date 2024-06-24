@@ -1,27 +1,77 @@
-document.getElementById('downloadCV').addEventListener('click', function() {
-  const imageElement = document.getElementById('CV-Timo')
+document.addEventListener('DOMContentLoaded', (event) => {
+  // Fonction pour créer un lien de téléchargement et déclencher le téléchargement
+  function downloadFile(fileUrl, fileName) {
+      const link = document.createElement('a');
+      link.href = fileUrl;
+      link.download = fileName;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+  }
 
-  const downloadLink = document.createElement('a')
-  downloadLink.href = imageElement.src
-  downloadLink.setAttribute('download', 'Alternance-Développeur-Web.webp')
-  downloadLink.style.display = 'none'
-  document.body.appendChild(downloadLink)
+  // Gestion du téléchargement du CV et de la lettre de motivation
+  const downloadCVButton = document.getElementById('downloadCV');
+  const downloadLMButton = document.getElementById('downloadLM');
+  const cvImage = document.getElementById('CV-Timo');
+  const lmImage = document.getElementById('lm-Timo');
 
-  downloadLink.click()
+  if (downloadCVButton && cvImage) {
+      downloadCVButton.addEventListener('click', () => {
+          downloadFile(cvImage.src, 'Alternance-Développeur-Web.webp');
+      });
+  }
 
-  document.body.removeChild(downloadLink)
-})
+  if (downloadLMButton && lmImage) {
+      downloadLMButton.addEventListener('click', () => {
+          downloadFile(lmImage.src, 'lm-Timothée-Hauser-–-V2.webp');
+      });
+  }
 
-document.getElementById('downloadLM').addEventListener('click', function() {
-  const imageElement = document.getElementById('lm-Timo')
+  // Ajoutez des écouteurs d'événements pour les éléments h1
+  const h1File1 = document.getElementById('downloadWord1');
+  const h1File2 = document.getElementById('downloadPowerpoint1');
 
-  const downloadLink = document.createElement('a')
-  downloadLink.href = imageElement.src
-  downloadLink.setAttribute('download', 'lm-Timothée-Hauser-–-V2.webp')
-  downloadLink.style.display = 'none'
-  document.body.appendChild(downloadLink)
+  if (h1File1) {
+      h1File1.addEventListener('click', () => {
+          downloadFile('../veilles/Veille_Techno_1.docx', 'Veille_Techno_1.docx');
+      });
+  }
 
-  downloadLink.click()
+  if (h1File2) {
+      h1File2.addEventListener('click', () => {
+          downloadFile('../veilles/Veille_Technologique.pptx', 'Veille_Technologique.pptx');
+      });
+  }
 
-  document.body.removeChild(downloadLink)
-})
+  // Gestion des clics sur les projets
+  const buttons = document.querySelectorAll('.event');
+  buttons.forEach(button => {
+      button.addEventListener('click', () => {
+          const link = button.querySelector('a').getAttribute('href');
+          window.location.href = link;
+      });
+  });
+
+  // Gestion du bouton "Go Back" pour la page de CV et de projets
+  const goBackButton = document.getElementById('goBackbutton');
+  const goBackButtonProjet = document.getElementById('goBackButton');
+  const goBackImg = document.getElementById('goBack')
+
+  if (goBackImg) {
+    goBackImg.addEventListener('click', () => {
+      window.location.href = '../Main/Card.html'
+    })
+  }
+
+  if (goBackButton) {
+      goBackButton.addEventListener('click', () => {
+          window.location.href = '../Main/Card.html';
+      });
+  }
+
+  if (goBackButtonProjet) {
+      goBackButtonProjet.addEventListener('click', () => {
+          window.location.href = 'Card.html';
+      });
+  }
+});

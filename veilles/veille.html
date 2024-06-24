@@ -4,36 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="app.js" defer></script>
+    <script src="../Main/app.js" defer></script>
     <title>Projets</title>
 </head>
 <body>
     <div class="left" style="display: flex; flex-direction: column; justify-content: space-between;">
-    <h1 class="fixed-title">Veille technologique (5g verte)</h1>
-        <h1 class="Word" style="align-items: center;">Word</h1>
-        <h1 class="Powerpoint" id="slideTitle">PowerPoint</h1>
+        <h1 class="fixed-title">Veille technologique (5g verte)</h1>
+        <h1 class="Word" id="downloadWord1" style="align-items: center;">Word</h1>
+        <h1 class="Powerpoint" id="downloadPowerpoint1">PowerPoint</h1>
     </div>
     <div class="right">
         <h1>Prochaine veille technologique à venir</h1>
     </div>
-    <div id="goBackButton" style="background-color: white;">
-        <img style="position: fixed; top:0; right:0;width:5%" src="../assets/gobackbutton.png" alt="Go Back">
-    </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            const goBackButton = document.getElementById('goBackButton')
-            goBackButton.addEventListener('click', () => {
-                window.location.href = '../Main/Card.html'
-            })
-        })
-        </script>
+        <img id="goBack" style="position: fixed; top:0; right:0;width:5%" src="../assets/gobackbutton.png" alt="Go Back">
     <div class="réseaux" style="position: fixed; bottom: 0; right: 0;">
-        <img src="../assets/instagramicon.webp" alt="Failed to load icon">
-        <a href="https://www.instagram.com/timothee_hauser/"></a>
-        <img src="../assets/linkedinicon.webp" alt="Failed to load icon">
-        <a href="www.linkedin.com/in/timothée-hauser-40b9b421b"></a>
-        <img src="../assets/githubicon.webp" alt="Failed to load icon">
-        <a href="https://github.com/Timotheehau"></a> 
+        <a href="https://www.instagram.com/timothee_hauser/"><img src="../assets/instagramicon.webp" alt="Failed to load icon"></a>
+        <a href="https://www.linkedin.com/in/timothée-hauser-c-est-moi"><img src="../assets/linkedinicon.webp" alt="Failed to load icon"></a>
+        <a href="https://github.com/Timotheehau"><img src="../assets/githubicon.webp" alt="Failed to load icon"></a> 
+        <a href="mailto:16.hauser@gmail.com"><img src="../assets/email_icon.webp" alt="Failed to load icon"></a>
     </div>
 </body>
 </html>

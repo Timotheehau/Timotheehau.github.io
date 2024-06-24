@@ -10,7 +10,7 @@ body {
 
 .left {
     margin: auto;
-    width: 50%;
+    width: 50vw;
     height: 100vh;
 
 }
@@ -20,12 +20,10 @@ body {
 }
 
 .Powerpoint {
-    width: 120%;
-    font-size: 700%;
-    cursor: pointer;
+    width: auto;
+    font-size: 7.5vw;
     --b: 5px; /* border thickness */
     --c: #0000 25%,rgb(139, 67, 0) 0; /* define the color here */
-    padding: 10px;
     background:
       conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--c)) 0    0,
       conic-gradient(from 180deg at top    var(--b) right var(--b),var(--c)) 100% 0,
@@ -49,8 +47,7 @@ body {
 
 .Word {
     width: 60%;
-    font-size: 700%;
-    cursor: pointer;
+    font-size: 8vw;
     --b: 5px; /* border thickness */
     --c: #0000 25%,rgb(139, 67, 0) 0; /* define the color here */
     padding: 10px;
@@ -100,7 +97,7 @@ body {
         color: white;
     }
     .left {
-        width: 100%;
+        width: 50vw;
         height: 50%;
         position: fixed;
         left: 0;
@@ -108,7 +105,7 @@ body {
         transition: transform 1s ease-in-out;
     }
     .right {
-        width: 100%;
+        width: 50vw;
         height: 50%;
         position: fixed;
         right: 0;
