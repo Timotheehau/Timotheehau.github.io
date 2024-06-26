@@ -1,0 +1,14 @@
+{
+    "name": "portfolio",
+    "version": "1.0.0",
+    "description": "Description de mon projet",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "author": "Votre Nom",
+    "license": "MIT",
+    "dependencies": {
+      "axios": "^0.21.1"
+    }
+  }
