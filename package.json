@@ -6,7 +6,7 @@
     "scripts": {
       "start": "node index.js"
     },
-    "author": "Votre Nom",
+    "author": "Timothée Hauser",
     "license": "MIT",
     "dependencies": {
       "axios": "^0.21.1"
