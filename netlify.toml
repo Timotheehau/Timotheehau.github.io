@@ -1,0 +1,9 @@
+[build]
+  publish = "public"  # Le dossier qui contient les fichiers statiques à publier
+  command = "npm run build"  # La commande pour construire le site
+
+[context.production]
+  command = "npm run build:prod"  # Commande spécifique pour l'environnement de production
+
+[context.deploy-preview]
+  command = "npm run build:preview"  # Commande spécifique pour les prévisualisations de déploiement
