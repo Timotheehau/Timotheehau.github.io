@@ -59,19 +59,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     if (goBackImg) {
         goBackImg.addEventListener('click', () => {
-            window.location.href = '../Main/Card.html';
+            window.location.href = '../index.html';
         });
     }
 
     if (goBackButton) {
         goBackButton.addEventListener('click', () => {
-            window.location.href = '../Main/Card.html';
+            window.location.href = '../index.html';
         });
     }
 
     if (goBackButtonProjet) {
         goBackButtonProjet.addEventListener('click', () => {
-            window.location.href = 'Card.html';
+            window.location.href = '../index.html';
         });
     }
 

@@ -21,7 +21,7 @@ body {
 
 .Powerpoint {
     width: auto;
-    font-size: 7.5vw;
+    font-size: 6vw;
     --b: 5px; /* border thickness */
     --c: #0000 25%,rgb(139, 67, 0) 0; /* define the color here */
     background:
@@ -47,7 +47,7 @@ body {
 
 .Word {
     width: 60%;
-    font-size: 8vw;
+    font-size: 7vw;
     --b: 5px; /* border thickness */
     --c: #0000 25%,rgb(139, 67, 0) 0; /* define the color here */
     padding: 10px;
