@@ -43,10 +43,7 @@
         </div>
         <div style="display: grid; grid-template-rows: 1fr 1fr">
 
-            <div><h1 class="premierH1" style="margin-left: 1vw;">Evenements réalisés et à venir</h1></div>
-            <div id="goBackButton" style=" cursor: pointer; width: 20vw; display: flex; justify-content: center;">
-                <img src="../assets/gobackbutton.png" style=" height: 10vh; width:auto; display: flex; justify-content: center;" alt="Go Back">
-            
+            <div><h1 class="premierH1" style="margin-left: 1vw;">Evenements réalisés et à venir</h1></div>            
                 <script>
 
                     document.addEventListener('DOMContentLoaded', () => {
@@ -58,13 +55,9 @@
                             })
                         })
                     })
-                    document.addEventListener('DOMContentLoaded', (event) => {
-                        const goBackButton = document.getElementById('goBackButton')
-                        goBackButton.addEventListener('click', () => {
-                            window.location.href = 'Card.html'
-                        })
-                    })
                     </script>
+                        <img id="goBackbutton" style="position: fixed; cursor: pointer; top: 0; right: 0; width: 4vw; height: auto;" src="../assets/gobackbutton.png" alt="Go Back">
+
                 </div>
                 <div class="réseaux" style="position: fixed; bottom: 1vh; right: 1vw; background-color: white;">
                     <a href="https://www.instagram.com/timothee_hauser/"><img src="../assets/instagramicon.webp" alt="Failed to load icon"></a>
