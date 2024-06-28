@@ -15,15 +15,18 @@ button {
     color: white;
     font-size: xx-large;
 }
-img{
+
+img {
     top: 0;
     bottom: 0;
     width: auto;
     height: 80vh;
 }
+
 * {
     margin: 0;
 }
+
 .right {
     top: 22%;
     position: relative;
@@ -32,10 +35,7 @@ img{
     justify-content: center;
     align-items: center;
     height: 50%;
-
 }
-
-
 
 .left {
     top: 22%;
@@ -45,9 +45,7 @@ img{
     align-items: center;
     height: 50%;
     position: relative;
-
 }
-
 
 @keyframes typing {
     from { width: 0; }
@@ -58,19 +56,22 @@ img{
     from, to { border-color: transparent; }
     50% { border-color: orange; }
 }
+
 .réseaux {
     display: flex;
     flex-direction: column;
     position: fixed;
     background-color: white;
-    img{
-        width: 50px;
-        height: 50px;
-    }
-    a{
-        text-decoration: none;
-        color: black;
-    }
+}
+
+.réseaux img {
+    width: 50px;
+    height: 50px;
+}
+
+.réseaux a {
+    text-decoration: none;
+    color: black;
 }
 
 @media screen and (max-width: 800px) {
@@ -80,27 +81,32 @@ img{
         justify-content: space-between;
         max-width: 100%;
         width: auto;
-        left:0;
+        left: 0;
         background-color: black;
         overflow: visible;
     }
+    
     .Bienvenue {
         font-size: 500%;
     }
+    
     .réseaux {
         display: flex;
         flex-direction: column;
         position: fixed;
         font-size: xx-large;
-        img{
-            width: 50px;
-            height: 50px;
-        }
-        a{
-            text-decoration: none;
-            color: black;
-        }
     }
+
+    .réseaux img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .réseaux a {
+        text-decoration: none;
+        color: black;
+    }
+
     .wave-top, .wave-bottom {
         z-index: -1;
         position: absolute;
